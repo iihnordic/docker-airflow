@@ -8,7 +8,7 @@ services:
             - POSTGRES_DB=airflow
 
     webserver:
-        image: puckel/docker-airflow:1.8.1
+        image: gcr.io/iih-tools-analytics/airflow-gcp
         restart: always
         depends_on:
             - postgres
